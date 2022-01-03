@@ -1,0 +1,23 @@
+{
+  "name": "wmss_covid_tracker",
+  "version": "1.0.0",
+  "description": "The WMSS COVID-19 Tracker # covid_tracker",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bruckart/wmss_covid_tracker.git"
+  },
+  "author": "Olivia Bruckart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bruckart/wmss_covid_tracker/issues"
+  },
+  "homepage": "https://github.com/bruckart/wmss_covid_tracker#readme"
+}
