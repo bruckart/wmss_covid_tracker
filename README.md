@@ -12,22 +12,7 @@ the a front page (index.html).
 
 # Algorithm/Testing Procedure:
 1. The user creates a student record for each student in the class. This includes student name, student number, and guardian email and phone number.
-./users ROUTE
-
-./add_user takes you to public/add_user.html
-public/add_user.html submits to add_user.js
-
-What about:
-public/users/add
-public/users/delete
-public/users/
-
-
-
-
 2. The user selects to create a classroom seating chart. Each seat will be given a coordinate on a map to determine how many feet it is from any other seat.
-
-
 3. The user assigns a student record for each seat in the seating chart.
 4. The user creates a line order chart for when the students are in line to leave the classroom for any reason. 5. Each line position will be given a coordinate on a map to determine how many feet it is from any position in the line.
 6. The user assigns a student to each place in the line order chart.
