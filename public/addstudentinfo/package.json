@@ -1,0 +1,20 @@
+{
+  "name": "addstudentinfo",
+  "version": "1.0.0",
+  "description": "this is the data for student information",
+  "main": "addstudentinfo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "data",
+    "studentinfo"
+  ],
+  "author": "Olivia Bruckart",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "nedb": "^1.8.0"
+  }
+}
