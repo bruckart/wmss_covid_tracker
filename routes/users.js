@@ -28,9 +28,7 @@ app.get('/', function (req, res)
 
 app.get('/add', function (req, res)
 {
-    // console.log("adding a user to the database!");
     res.render('adduserform');
-    // res.send('Adding User');
 });
 
 app.post('/add', function (req, res)

@@ -25,7 +25,6 @@ app.use(bodyParser.json())
 // Used to parse JSON bodies (as sent by API clients)
 app.use(express.json()); 
 
-
 const about = require('./routes/about')
 app.use('/about', about)
 
@@ -34,6 +33,12 @@ app.use('/users', users)
 
 const classrooms = require('./routes/classrooms')
 app.use('/classrooms', classrooms)
+
+const classroomgrid = require('./routes/classroomgrid')
+app.use('/classroomgrid', classroomgrid)
+
+const lineorder = require('./routes/lineorder')
+app.use('/lineorder', lineorder)
 
 const index = require('./routes/index')
 app.use('/', index)
