@@ -6,7 +6,7 @@ let students = [];
 
 function setup() {
   createCanvas(1200,600);
-  //bg = loadImage('empty-blackboard.jpg');
+  bg = loadImage('empty-blackboard.jpg');
   
   deskWidth = width/7;
   deskHeight = height/7;
@@ -73,7 +73,7 @@ function mousePressed(){
 }
 
 function draw() {
-  background(255);
+  background(bg);
   
   //make grid
   for (var x = 0; x < width; x += width / 42) {

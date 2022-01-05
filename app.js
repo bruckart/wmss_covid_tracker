@@ -1,29 +1,21 @@
 
 
 
-// let http = require('http');
-// let router = require('./routes');
-
 var express = require('express');
 var app = express();
 
 // Set the view engine to embedded javascript
 app.set('view engine', 'ejs');
 
-
-
-
-// app.use(express.static('/public'));
+app.use(express.static('public'));
 
 var bodyParser = require('body-parser')
+// Parse URL-encoded bodies (as sent by HTML forms)
 app.use(bodyParser.urlencoded({extended : true}));
-// app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-//Parse URL-encoded bodies (as sent by HTML forms)
-// app.use(express.urlencoded());
 // Used to parse JSON bodies (as sent by API clients)
-app.use(express.json()); 
+// app.use(express.json()); 
 
 const about = require('./routes/about')
 app.use('/about', about)
