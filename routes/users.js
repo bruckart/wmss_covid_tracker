@@ -10,7 +10,6 @@ const db = new sqlite3.Database('src/wmss_covid_tracker.db');
 db.all("SELECT student_id, \
                first_name, \
                last_name, \
-               student_email, \
                guardian_email, \
                line_order_position \
                FROM users", (error, rows) => {
@@ -42,19 +41,12 @@ app.post('/add', function (req, res)
     console.log("req body = " + req.body.last_name);
 
 
-    // console.log("post student id=" + post.student_id);
+    db.all('INSERT INTO users(student_id, first_name, last_name, guardian_email) values (?,?,?,?)', [req.body.student_id, req.body.first_name, req.body.last_name, req.body.guardian_email], (error, rows) => {
+     rows.forEach((row) => {
+        console.log(row.first_name + " " + row.last_name);
+    })
+ });
 
-    // console.log("Student ID: " + req.body.student_id);
-
-    // res.render('adduserform');
-    // res.send('Adding User');
 });
-
-// // Display the user with the specific id (e.g. users/add/1514981)
-// app.get('/:id', function (req, res)
-// {
-//     console.log("users/id");
-//     res.send('Users' + req.params.id);
-// });
 
 module.exports = app

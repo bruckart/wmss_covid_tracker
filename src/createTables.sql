@@ -10,7 +10,6 @@ CREATE TABLE users
     student_id INTEGER PRIMARY KEY,
     first_name TEXT,
     last_name TEXT,
-    student_email TEXT,
     guardian_email TEXT,
     line_order_position INTEGER
 );
@@ -39,22 +38,17 @@ INSERT INTO classroom VALUES("Ms. Maletta");
 INSERT INTO users VALUES (1514981, 
                           "Olivia",
                           "Bruckart",
-                          "olivia.bruckart@gmail.com",
                           "janine.bruckart@gmail.com",
                           4);
 INSERT INTO users VALUES (1611628, 
                           "Eliana",
                           "Bruckart",
-                          "eliana.bruckart@gmail.com",
                           "janine.bruckart@gmail.com",
                           2);
 INSERT INTO users VALUES (NULL, 
                           "Aiden",
                           "Bruckart",
-                          "aiden.bruckart@gmail.com",
                           "janine.bruckart@gmail.com",
                           1);
 
-
-INSERT INTO users VALUES ()
 

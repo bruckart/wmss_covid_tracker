@@ -5,14 +5,17 @@ function setup() {
   createCanvas(1400,600);
   bg = loadImage('grass.jpg');
   
+  //Create 22 students all in a line (same y posistion)
   for (let i = 50; i < 1210; i +=55){
     let s = new Student (i, 300);
     students.push(s);
   }
 }
 
+//When mouse is pressed anywhere
 function mousePressed(){
   for(let i = 0; i < students.length; i++){
+    //Check each student if they were pressed
     students[i].clicked(mouseX, mouseY);
   }
 }
@@ -27,6 +30,7 @@ function draw() {
   strokeWeight(6);
   line(30,400,1250,400);
   
+  //Draw each student circle in a line
   for (let i = 0; i < students.length; i++){
     students[i].show();
   }
@@ -45,6 +49,7 @@ class Student{
     circle(this.studentCircleX, this.studentCircleY, this.circleWidth);
     fill(255,255,255);
     textSize(12);
+    //Show student number on the student circle
     if (this.studentNum == -1){
       text('Empty',this.studentCircleX-15, this.studentCircleY-15);
     }

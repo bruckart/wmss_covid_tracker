@@ -131,6 +131,7 @@ class Student{
     fill(0,0,255,191);//blue 75% opaque color
     circle(this.studentCircleX, this.studentCircleY, this.circleWidth);
     fill(255,255,255);
+    //Show student number on the circle or "empty" if not set yet
     if (this.studentNum == -1){
       text('Empty',this.studentCircleX, this.studentCircleY);
     }
