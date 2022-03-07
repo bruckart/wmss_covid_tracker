@@ -42,9 +42,13 @@ app.post('/add', function (req, res)
 
 
     db.all('INSERT INTO users(student_id, first_name, last_name, guardian_email) values (?,?,?,?)', [req.body.student_id, req.body.first_name, req.body.last_name, req.body.guardian_email], (error, rows) => {
-     rows.forEach((row) => {
-        console.log(row.first_name + " " + row.last_name);
-    })
+     if (error)
+        console.log("Error inserting : %s ",error );
+     else{
+        rows.forEach((row) => {
+           console.log(row.first_name + " " + row.last_name);
+       })
+     }
  });
 
 });

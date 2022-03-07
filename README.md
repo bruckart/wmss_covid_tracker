@@ -5,7 +5,7 @@
 
 This repository contains a web application which illustrates tracking COVID-19
 infections via a classroom seating chart and line order. This was designed and
-developed for my daughter's 6th grade science project. This application contains
+developed for a 6th grade science project. This application contains
 the a front page (index.html).
 
 
